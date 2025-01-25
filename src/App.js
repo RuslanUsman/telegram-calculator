@@ -10,9 +10,7 @@ import 'telegram-web-app-api';
 import './App.css';
 
 function App() {
-  useEffect(() => {
-    window.Telegram.WebApp.ready();
-  }, []);
+ 
 
   return (
     <Router>
