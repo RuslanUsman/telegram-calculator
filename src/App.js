@@ -1,4 +1,12 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainMenu from './components/MainMenu';
+import MaterialSelection from './components/MaterialSelection';
+import ConstructionSelection from './components/ConstructionSelection';
+import Result from './components/Result';
+import MyTelegramApp from './MyTelegramApp'; 
+import'telegram-web-app-api';
+
 import './App.css';
 
 function App() {
@@ -7,9 +15,16 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Hello, Telegram Mini App!</h1>
-    </div>
+    <Router>
+    <Routes>
+    <Route path="/" element={<MainMenu />} />
+      <Route path="/MainMenu-component" element={<MainMenu />} />
+      <Route path="/materials" element={<MaterialSelection />} />
+      <Route path="/construction" element={<ConstructionSelection />} />
+      <Route path="/result" element={<Result />} />
+      <Route path="/my-telegram-app" element={<MyTelegramApp />} />
+    </Routes>
+  </Router>
   );
 }
 
