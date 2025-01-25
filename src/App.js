@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
     <Routes>
-    <Route path="/" element={<MainMenu />} />
+    
       <Route path="/MainMenu-component" element={<MainMenu />} />
       <Route path="/materials" element={<MaterialSelection />} />
       <Route path="/construction" element={<ConstructionSelection />} />
