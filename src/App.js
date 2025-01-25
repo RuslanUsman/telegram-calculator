@@ -23,6 +23,7 @@ function App() {
       <Route path="/construction" element={<ConstructionSelection />} />
       <Route path="/result" element={<Result />} />
       <Route path="/my-telegram-app" element={<MyTelegramApp />} />
+      <Route path="/telegram-calculator" element={<MyTelegramApp />} />
     </Routes>
   </Router>
   );
